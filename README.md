@@ -37,3 +37,56 @@ These requirements are saved in a requirements.txt file
 
    ```bash
    pip install -r requirements.txt
+
+
+## Usage
+
+**Data Preparation:**
+
+1. Ensure your data is stored in a CSV file with features relevant to crop yield prediction.
+2. Replace `"yield_df.csv"` in the `data_path` variable within the `load_data` function in the `crop_yield_prediction.py` script with the actual path to your data file.
+
+**Run the Script:**
+
+1. Open a terminal or command prompt and navigate to the directory containing the project files.
+2. Run the script using the following command:
+
+```bash
+python crop_yield_prediction.py
+```
+
+The script will:
+
+Load and preprocess your data.
+Train and evaluate different machine learning models.
+Select the best performing model based on the evaluation metrics.
+Make a sample prediction for a new data point (you can modify the provided example).
+Save the best model for future use.
+Model Evaluation and Selection
+
+The script evaluates various machine learning models and prints their performance metrics. You can choose the model with the best performance based on your specific criteria. In the provided script, a decision tree model is chosen for demonstration purposes, but you can modify this based on your evaluation results.
+
+## Customization
+
+You can modify the script to:
+
+Include additional features relevant to your crop yield prediction task.
+Explore different machine learning models and hyperparameter tuning for potentially better performance.
+Implement more advanced features like feature engineering.
+Create a more user-friendly interface for prediction using web frameworks (e.g., Flask, Streamlit).
+
+### Further Enhancements
+
+Consider implementing error handling and logging for robustness.
+Explore advanced model deployment techniques using cloud platforms or containerization (Docker).
+Integrate the model into an agricultural decision support system.
+
+## License
+
+This project is distributed under the MIT License. You are free to use, modify, and distribute the code under the terms of this license.
+
+Optional: Screenshot
+
+[Replace with a screenshot of the script's output (optional)]
+
+I hope this README provides a clear and informative overview of the Crop Yield Prediction project!
